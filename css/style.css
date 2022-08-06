@@ -12,7 +12,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #f8e9dd;
-  height: 100vh; }
+  height: calc(100vh - 10rem); }
 
 .container {
   display: flex;
