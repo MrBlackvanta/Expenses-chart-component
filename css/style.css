@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "DM Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8e9dd;
+  height: 100vh; }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 50rem;
+  gap: 2rem; }
+
+.header {
+  color: #fffaf5;
+  background-color: #ec775f;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  align-items: center; }
+  .header__balance-box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 1.8rem; }
+  .header__title {
+    font-size: 1.3rem; }
+
+.main {
+  background-color: #fffaf5;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem; }
+  .main__heading {
+    color: #382314;
+    font-size: 3rem; }
+    @media only screen and (max-width: 34em) {
+      .main__heading {
+        font-size: 2.5rem; } }
+  .main__details {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 1rem; }
+  .main__total {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    color: #382314; }
+
+.title {
+  color: #93867b;
+  font-size: 1.3rem; }
+
+.total-balance {
+  font-size: 4rem; }
+  @media only screen and (max-width: 34em) {
+    .total-balance {
+      font-size: 2.5rem; } }
+
+.interest-rate {
+  font-size: 1.8rem;
+  font-weight: 700;
+  align-self: flex-end; }
+
+.attribution {
+  font-size: 1.1rem;
+  text-align: center; }
+  .attribution a:link,
+  .attribution a:visited {
+    font-size: 1.2rem;
+    color: #ec775f;
+    text-decoration: none;
+    font-weight: 700; }
+
+#myChart {
+  padding-bottom: 2rem;
+  border-bottom: 2px solid #f8e9dd;
+  -webkit-tap-highlight-color: transparent; }
+  @media only screen and (max-width: 34em) {
+    #myChart {
+      width: 100% !important; } }
